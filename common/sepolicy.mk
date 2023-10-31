@@ -20,14 +20,9 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/custom/sepolicy/common/dynamic \
     device/custom/sepolicy/common/system
 
-ifneq ($(TARGET_HAL_POWER_RW_INPUT_DEVICE), true)
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/custom/sepolicy/common/dynamic_extra
-endif
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/custom/sepolicy/common/dynamic \
-    device/custom/sepolicy/common/dynamic_extra \
     device/custom/sepolicy/common/vendor
 endif
 
